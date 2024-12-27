@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="ilakkstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>Ilakkiya</span>
+                </div>
+                <div class="links">
+                    <div class="link"><a href="#">Home</a></div>
+                    <div class="link"><a href="#">About</a></div>
+                    <div class="link"><a href="#">Skills</a></div>
+                    <div class="link"><a href="#">Services</a></div>
+                    <div class="link"><a href="#">projects</a></div>
+                    <div class="link"><a href="#">Certifications</a></div>
+                    <div class="link"><a href="#">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Services</a>
+                    <a href="#">projects</a>
+                    <a href="#">Certifications</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="main-container">
+                <div class="image">
+                    <img src="img1/port1.gif.gif" alt="GIF Animation" class="styled-gif">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left">
+                        Hey! I'm 
+                        <span>ilakkiya</span>
+                    </h1>
+                    <div class="typewriter">
+                        I'm a Fresher.
+                    </div>
+                    <p>As a student with a passion for innovation, strong academic background and interpersonal skills, I am motivated and adaptable. I am eager to contribute to a dynamic team, apply theoretical knowledge, and gain practical experience.</p>
+                    <p>Beyond my technical skills, I am motivated by a desire to make meaningful contributions to projects that can drive real-world impact. I am actively seeking a challenging entry-level position in the software industry where I can apply my skills, grow through exposure to complex projects, and work alongside experienced professionals. I am enthusiastic about leveraging my technical foundation to support a team’s goals, add value through innovation, and continue advancing my practical experience in the field.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ilakkiya-pothiraj" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Ilakkiya-19" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/your-username" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="btn">
+                        <button>Hire me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!---about section start-->
+
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title"><span>About me</span></div>
+                <div class="about-details">
+                    <div class="left">
+                        <img src="img1/res.gif.gif" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="topic">Programming and Web development is my technology passion</div>
+                        <p>As a Computer Science student, my passion for Java programming has grown tremendously over the years. I first encountered Java in my introductory programming course, where I was drawn to its object-oriented structure and readability. This foundational knowledge sparked my curiosity, leading me to explore the language further through various online courses and tutorials. I also learnt HTML,CSS  to develop my website.Through hands-on projects and coding challenges, I've honed my skills and learned to appreciate the power of Java in solving real-world problems.I also coded many programs by contributing in github.</p>
+                        <div class="button">
+                            <a href="img1/ilakkiyaIT (1).pdf" download>
+                                <button>Download CV</button>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---MY skill section start-->
+        <section class="Skills" id="Skills">
+            <div class="content">
+                <div class="title"><span>My Skills</span></div>
+                <div class="skill-details">
+                    <div class="text">
+                        <div class="topic">
+                            Skills reflect our knowledge
+                        </div>
+                        <p data-aos="fade-right">I have skills such as problem solving skills where i have solved real-time problems through coding. I also have technical skills such as java,HTML,CSS, AWS and basics of SQL. I also have good analytical and interpersonal skills</p>
+                        <div class="boxes">
+                            <div class="box">
+                                <div class="topic">Java</div>
+                                <div class="per">80%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">HTML</div>
+                                <div class="per">70%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">CSS </div>
+                                <div class="per">60%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">CLOUD/AWS </div>
+                                <div class="per">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---My services section start--->
+
+        <section class="services" id="services">
+            <div class="content">
+                <div class="title"><span>My services</span></div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic"> Java</div>
+                        <p>I have a solid foundation and problem solving skills in java by solving basic to complex programs and also contributed by github and hackerrank </p>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic"> Web development</div>
+                        <p>I developed projects using HTML,CSS and created simple webpage and now contributing in Web development.</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic"> Project Presentation</div>
+                        <p>I Have completed my paper "Enhancing Automation of Digital Evidence in cloud forensics".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!---Projects section start--->
+         <section class="projects" id="projects">
+            <div class="content">
+                <div class="title"><span>My Projects</span></div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic">Project 1: Research Paper</div>
+                        <p>"Automation of Digital Evidence Analysis Using Cloud Forensics" - This project compares the efficiency of deep learning and machine learning algorithms.</p>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Project 2: Portfolio Website</div>
+                        <p>Developed a personal portfolio using HTML and CSS, showcasing my skills and projects.</p>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Project 3: Figma - Food Delivery App</div>
+                        <p>Designed a simple food delivery app interface using Figma.</p>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Project 4: Temperature Controlled Table Fan</div>
+                        <p>Created a project where the fan adjusts cooling based on the room temperature. Also, drafted an idea for a "Chronokey-Based Secure Door Lock".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---Certifications-->
+        <section class="Certifications" id="Certifications">
+            <div class="content">
+                <div class="title"><span>My Certifications</span></div>
+                <div class="Certification-Details">
+                    <div class="text">
+                        <div class="topic">
+                            Skill validation
+                        </div>
+                        <p> I have achieved HackerRank Certification in java </p>
+                        <p> I also have international Conference certification for my paper presentation- "Enhancing Automation of Digital Evidence in cloud forensics"</p>
+                        <p> I have also secured AWS- cloud practitioner certification</p>
+                        <p> I also achieved AWS cloud 101 Educate badge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---contact me section-->
+
+        <section class="contact" id="contact">
+            <div class="content">
+                <div class="title"><span>Contact Me</span></div>
+                <div class="text">
+                    <div class="topic">Hire me and Have any project? Let's Discuss</div>
+                    <h3>Get in Touch!</h3>
+                    <p> This my portfolio Website. I’m always open to discussing new projects, creative ideas, or opportunities to collaborate. Whether you have a question about my work or want to connect, feel free to reach out! </p>
+                    <h3>Contact Information-
+                        Email: Ilakkiyapothiraj@gmail.com
+                        For inquiries or further information, don’t hesitate to drop me a message. I strive to respond to all emails within 24 hours.
+                        
+                        Social Media:
+                        Connect with me on LinkedIn, GitHub, and Instagram.I look forward to hearing from you!
+                    </h3>
+                    <div class="button">
+                        <button>Let's Chat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer section-->
+
+         <footer>
+            <div class="text">
+                <span>Created By
+                    <a href="#">Ilakkiya</a>
+                    |&#169;2024 All Rights Reserved
+                </span>
+            </div>
+         </footer>
+    </body>
+</html>
