@@ -142,34 +142,63 @@ section .main-container{
     align-items: center;
 }
 
-.main-container .image{
-    width: 1250px;
-    height: 60vh;
+.main-container .image {
+    width: 100%; 
+    max-width: 1250px; 
+    height: auto; 
+    max-height: 60vh; 
     align-items: center;
-    border-radius: 100%;
+    border-radius: 50%; 
     overflow: hidden;
     box-shadow: 0 0 50px #b74b4b;
-    margin-left: -150px;
-    
+    margin-left: -150px; 
 }
 
-.main-container .image:hover{
+
+.main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
 }
 
-@keyframes animate{
-    0%{
-        scale: 1;
+@keyframes animate {
+    0% {
+        transform: scale(1); 
     }
-
-    50%{
-        scale:1.05;
+    50% {
+        transform: scale(1.05); 
     }
-
-    100%{
-        scale: 1;
+    100% {
+        transform: scale(1); 
     }
 }
+
+
+@media (max-width: 1024px) {
+    .main-container .image {
+        width: 90%; 
+        max-width: 1000px; 
+        height: auto; 
+        max-height: 60vh; 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container .image {
+        width: 80%; 
+        max-width: 800px;
+        height: auto; 
+        max-height: 55vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container .image {
+        width: 100%; /* Make the image full-width for mobile */
+        max-width: 100%;
+        height: auto; 
+        max-height: 50vh; 
+    }
+}
+
 
 .main-container .content{
     color:white;
@@ -351,24 +380,40 @@ section .button{
     margin:16px 0;
 }
 
-section .button button{
-    outline:none;
-    padding:8px 16px;
+section .button button {
+    outline: none;
+    padding: 8px 16px;
     border-radius: 4px;
     font-size: 25px;
     font-weight: 400;
     background: #b74b4b;
     color: #fff;
-    border:2px solid transparent;
-    cursor:pointer;
+    border: 2px solid transparent;
+    cursor: pointer;
     transition: all 0.4s ease;
 }
 
-section .button button:hover{
+section .button button:hover {
     border-color: #b74b4b;
     background-color: #fff;
-    color:#b74b4b
+    color: #b74b4b;
 }
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    section .button button {
+        font-size: 18px; /* Smaller font size for smaller screens */
+        padding: 10px 20px; /* Adjust padding for better appearance */
+    }
+}
+
+@media (max-width: 480px) {
+    section .button button {
+        font-size: 16px; /* Further reduce font size for smaller devices */
+        padding: 8px 16px; /* Adjust padding for compact space */
+    }
+}
+
 
 .skills{
     background: black;   
