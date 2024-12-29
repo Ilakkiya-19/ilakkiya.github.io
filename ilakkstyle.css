@@ -36,9 +36,14 @@ body{
     background: #b74b4b;
 }
 
-nav{
+nav {
     width: 100%;
     height: 10vh;
+    position: sticky; 
+    top: 0;           
+    z-index: 100;     
+    background-color: black; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .nav-container{
@@ -47,6 +52,8 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
 .logo{
@@ -133,6 +140,7 @@ nav{
 section{
     width: 100%;
     min-height: 90vh;
+    padding-top: 10vh;
 }
 
 section .main-container{
