@@ -1,21 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Smooth scroll functionality
     const navLinks = document.querySelectorAll('.nav-container .links a');
+    
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        const targetSection = document.querySelector(link.getAttribute('href'));
-        targetSection.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+        const targetId = link.getAttribute('href'); 
+        const targetSection = document.querySelector(targetId);
+
+        if (window.location.hash === targetId) {
+          
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
+        } else {
+          
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start', 
+          });
+        }
       });
     });
   
-    // Button alert
-    document.querySelector('.btn button').addEventListener('click', function() {
-      alert('Thanks for considering me! Let\'s connect soon.');
-    });
+   
+    const hireButton = document.querySelector('.btn button');
+    if (hireButton) {
+      hireButton.addEventListener('click', function() {
+        alert('Thanks for considering me! Let\'s connect soon.');
+      });
+    }
   });
-  
   
